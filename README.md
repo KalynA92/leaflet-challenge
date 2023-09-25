@@ -10,7 +10,7 @@ The USGS is interested in building a new set of tools that will allow them to vi
 
 1. Get your dataset. To do so, follow these steps:
 
-	The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the USGS GeoJSON FeedLinks to an external site. page and choose a 	dataset to visualize.
+	The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the USGS GeoJSON FeedLinks to an external site. page and choose a dataset to visualize.
 
 2.  Import and visualize the data by doing the following:
 
@@ -27,6 +27,8 @@ The USGS is interested in building a new set of tools that will allow them to vi
 I started by selecting the earthquake data over the last week from the USGS. I stored this url and performed a request for the data from this url. Once the data responded, I sent the data to the create features function to begin developing the features for the map. I defined the size of the markers based on the magnitude of any given earthquake. I determined the color scale based on the depth of any given earthquake. I created a function with the feature data and created a geoJSON layer with this data. I created a bind popup for each marker for a description of time and place of any given earthquake. I adjusted the marker's size and colour based on the magnitude and depth of any given earthquake. I sent the geoJSON layer to createMap function, created the tile layers, baseMap, and overlayMap objects. Created the map and layer control for baseMaps and overlayMaps objets. Set up and added the legend to the map.
 
 # References and citations
+
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
 
 https://leafletjs.com/reference.html#marker
 
